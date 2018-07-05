@@ -1,0 +1,341 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+  font-size: .14rem;
+  box-sizing: border-box;
+  font-family: "楷体";
+}
+
+html {
+  font-size: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-callout: none;
+  -webkit-touch-callout: none;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+a {
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: .4rem;
+  background: #393A3F;
+  display: flex;
+  padding: 0 .2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a b {
+  margin-right: .1rem;
+}
+
+header a b,
+header a span,
+header a .icon {
+  color: #fff;
+}
+
+section {
+  flex: 1;
+  background: #F4F4F4;
+  overflow-y: scroll;
+}
+
+section .scroll {
+  width: 100%;
+  height: 100%;
+}
+
+section .scroll form {
+  width: 100%;
+  height: .2rem;
+  display: flex;
+  padding: 0 .2rem;
+  align-items: center;
+  position: fixed;
+  top: .45rem;
+  left: 0;
+  z-index: 99;
+}
+
+section .scroll form a {
+  width: .2rem;
+  height: .2rem;
+  border-radius: 50%;
+  margin-right: .15rem;
+  background: #fff;
+  text-align: center;
+  line-height: .2rem;
+}
+
+section .scroll form a .icon {
+  color: #A0A0A0;
+  font-size: .14rem;
+}
+
+section .scroll form input {
+  padding-left: .4rem;
+  flex: 1;
+  height: 100%;
+  background: none;
+  border: 0;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: .15rem;
+}
+
+section .scroll form input ::-webkit-input-placeholder {
+  color: #999;
+}
+
+section .scroll form .icon-fangdajing {
+  position: absolute;
+  left: 50%;
+  top: .015rem;
+  font-size: .16rem;
+  color: #999;
+  margin-left: -27%;
+}
+
+section .scroll .wrapper {
+  width: 100%;
+}
+
+section .scroll .wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section .scroll .wrapper .swiper-pagination-progressbar-fill {
+  width: .5rem;
+  height: .5rem;
+  border-radius: .15rem;
+  background: red;
+}
+
+section .scroll .wrapper .swiper-pagination {
+  width: 100%;
+  height: .2rem;
+  position: absolute;
+  z-index: 999;
+}
+
+section .scroll .wrapper .swiper-pagination-bullet-active {
+  width: .2rem;
+  height: .08rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: .05rem;
+}
+
+section .scroll .list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: .1rem .15rem;
+}
+
+section .scroll .list li {
+  width: 18%;
+  height: .6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
+section .scroll .list li span {
+  font-size: .1rem;
+  line-height: .25rem;
+}
+
+section .scroll .list li .icon {
+  font-size: .22rem;
+}
+
+section .scroll .pic {
+  width: 100%;
+  height: auto;
+  padding-bottom: .1rem;
+}
+
+section .scroll .pic img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section .scroll .tit {
+  width: 100%;
+  height: auto;
+  padding: 0 .15rem;
+  display: flex;
+  align-items: center;
+}
+
+section .scroll .tit a {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: .2rem;
+}
+
+section .scroll .tit a b {
+  display: block;
+  font-size: .2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+section .scroll .tit a span {
+  font-size: .12rem;
+  color: #333;
+}
+
+section .scroll .tit a button {
+  width: .3rem;
+  height: .15rem;
+  background: none;
+  border: 0;
+  background: #FF2434;
+  color: #fff;
+  text-align: center;
+  border-radius: .15rem;
+  font-weight: bold;
+  font-size: .12rem;
+}
+
+section .scroll .tit .title {
+  flex: 7;
+  display: flex;
+  margin-left: .15rem;
+  margin-right: .3rem;
+}
+
+section .scroll .tit .title div {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: .15rem;
+}
+
+section .scroll .tit .title div h3 {
+  width: 100%;
+  height: .2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .scroll .tit .title div h3 span {
+  font-size: .12rem;
+}
+
+section .scroll .tit .title div h3 img {
+  width: .22rem;
+  height: auto;
+}
+
+section .scroll .tit .title div p {
+  font-size: .12rem;
+  color: #999;
+}
+
+section .scroll .tit .title em {
+  flex: 4;
+}
+
+section .scroll .tit .title em img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+footer {
+  width: 100%;
+  height: .4rem;
+  padding: 0 .15rem;
+}
+
+footer ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul li span {
+  color: #999;
+  font-size: .12rem;
+}
+
+footer ul li .icon {
+  color: #999;
+}
+
+.active span {
+  color: #E93B3D;
+  font-size: .12rem;
+}
+
+.active .icon {
+  color: #E93B3D;
+}
