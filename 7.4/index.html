@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telphone=no, email=no,address=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="swiper-4.2.2.min.css">
+    <script src="swiper-4.2.2.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="Bscroll.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <a href="">
+                <b>&times</b>
+                <span>京东购物</span>
+            </a>
+            <a href="">
+                <i class="icon iconfont icon-gongzuo"></i>
+            </a>
+        </header>
+
+        <section class="container">
+            <div class="scroll">
+                <form action="">
+                    <a href=""><i class="icon iconfont icon-gengduo-2"></i></a>
+                    <input type="text" placeholder="钓鱼竿">
+                    <i class="icon iconfont icon-fangdajing"></i>
+                </form>
+                <div class="swiper-container wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/7.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/8.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/9.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <i class="icon iconfont icon-youhuiquan-01" style="color:#E93B3D"></i>
+                        <span>领优惠券</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-wode" style="color:#D62A2C"></i>
+                        <span>9.9元拼</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-youhuiquan-geren-01" style="color:#A56742"></i>
+                        <span>找折扣</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-douban" style="color:#D04794"></i>
+                        <span>豆瓣</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-shoucang" style="color:#38ACAA"></i>
+                        <span>挑礼物</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-reddit" style="color:#DA8F11"></i>
+                        <span>领京豆</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-gouwuche" style="color:#984676"></i>
+                        <span>京东服饰</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-quanbudingdan-01" style="color:#DA8F11"></i>
+                        <span>京东超市</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-dianhua" style="color:#5E6C90"></i>
+                        <span>京东手机</span>
+                    </li>
+                    <li>
+                        <i class="icon iconfont icon-gengduo-2" style="color:#666666"></i>
+                        <span>全部分类</span>
+                    </li>
+                </ul>
+                <div class="pic">
+                    <img src="images/2.png" alt="">
+                </div>
+                <div class="tit">
+                    <a href="">
+                        <b>我的</b>
+                        <span>购物头条</span>
+                        <button>>></button>
+                    </a>
+                    <div class="title">
+                        <div>
+                            <h3>
+                                <img src="images/3.png" alt="">
+                                <span>京东天气管家</span>
+                            </h3>
+                            <p>
+                                您所在的城市太过干燥啦,奉上保湿大福利!戳这里 >
+                            </p>
+                        </div>
+                        <em>
+                        <img src="images/4.png" alt="">
+                    </em>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li class="active">
+                    <i class="icon iconfont icon-shouye"></i>
+                    <span>首页</span>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-tianbiao"></i>
+                    <span>微选</span>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-gouwuche"></i>
+                    <span>购物车</span>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-shoucang"></i>
+                    <span>收藏</span>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-wode"></i>
+                    <span>个人中心</span>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script>
+        // 轮播
+        var mySwiper = new Swiper('.swiper-container ', {
+            autoplay: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+        // 滚动时form改变位置
+        var form = document.getElementsByTagName('form')[0];
+        window.onscroll = function() {
+            form.style.top = 0;
+            if (document.documentElement.scrollTop === 0) {
+                form.style.top = 45 + 'px';
+            }
+        };
+    </script>
+</body>
+
+</html>
